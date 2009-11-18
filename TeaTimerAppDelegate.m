@@ -52,6 +52,14 @@
         [item setTag:i];
         [item release];
     }
+    
+    //have we ever run before?
+    /*NSUserDefaults *preferences = [[NSUserDefaults standardUserDefaults] retain];    
+    int has_ever_run = [preferences integerForKey:@"has_ever_run"];
+    
+    [preferences release];
+     */
+
 }
 
 

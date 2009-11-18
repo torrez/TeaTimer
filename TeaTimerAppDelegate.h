@@ -11,7 +11,7 @@
 
 @interface TeaTimerAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow        *window;
-    NSMenu          *status_menu;
+    IBOutlet NSMenu *status_menu;
     NSStatusItem    *status_item;
 
     NSImage         *empty_cup;
