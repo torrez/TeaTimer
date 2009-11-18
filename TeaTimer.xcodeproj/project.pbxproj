@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* TeaTimerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TeaTimerAppDelegate.m */; };
+		6C8A58B510B384B5001384D6 /* Empty In Status Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C8A58B410B384B5001384D6 /* Empty In Status Bar.png */; };
 		6CE677BC10B22A3F00917E66 /* Brewing.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CE677BB10B22A3F00917E66 /* Brewing.png */; };
 		6CE677BE10B22A7600917E66 /* Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CE677BD10B22A7600917E66 /* Empty.png */; };
 		6CE677D810B267B800917E66 /* Brewed.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CE677D710B267B800917E66 /* Brewed.png */; };
@@ -28,6 +29,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		6C8A58B410B384B5001384D6 /* Empty In Status Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Empty In Status Bar.png"; path = "Resources/Empty In Status Bar.png"; sourceTree = "<group>"; };
 		6CE677BB10B22A3F00917E66 /* Brewing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Brewing.png; path = Resources/Brewing.png; sourceTree = "<group>"; };
 		6CE677BD10B22A7600917E66 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Empty.png; path = Resources/Empty.png; sourceTree = "<group>"; };
 		6CE677D710B267B800917E66 /* Brewed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Brewed.png; path = Resources/Brewed.png; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6C8A58B410B384B5001384D6 /* Empty In Status Bar.png */,
 				6CE677D710B267B800917E66 /* Brewed.png */,
 				6CE677BD10B22A7600917E66 /* Empty.png */,
 				6CE677BB10B22A3F00917E66 /* Brewing.png */,
@@ -173,6 +176,7 @@
 				6CE677BC10B22A3F00917E66 /* Brewing.png in Resources */,
 				6CE677BE10B22A7600917E66 /* Empty.png in Resources */,
 				6CE677D810B267B800917E66 /* Brewed.png in Resources */,
+				6C8A58B510B384B5001384D6 /* Empty In Status Bar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 
 @interface TeaTimerAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow        *window;
+    NSWindow        *first_run_window;
     IBOutlet NSMenu *status_menu;
     NSStatusItem    *status_item;
 
@@ -22,6 +23,7 @@
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow *first_run_window;
 @property (nonatomic,retain) NSTimer *brew_timer;
 
 - (void)startNewInterval:(id)sender;

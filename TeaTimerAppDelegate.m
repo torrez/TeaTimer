@@ -11,6 +11,7 @@
 @implementation TeaTimerAppDelegate
 
 @synthesize window;
+@synthesize first_run_window;
 @synthesize brew_timer;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -54,12 +55,16 @@
     }
     
     //have we ever run before?
-    /*NSUserDefaults *preferences = [[NSUserDefaults standardUserDefaults] retain];    
+    NSUserDefaults *preferences = [[NSUserDefaults standardUserDefaults] retain];    
     int has_ever_run = [preferences integerForKey:@"has_ever_run"];
-    
+    if (has_ever_run == 0)
+    {
+     	[first_run_window makeKeyAndOrderFront:nil];
+        [preferences setInteger:1 forKey:@"has_ever_run"];
+    } else {
+        [first_run_window orderOut:nil];
+    }
     [preferences release];
-     */
-
 }
 
 
