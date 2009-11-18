@@ -13,6 +13,7 @@
 @synthesize window;
 @synthesize first_run_window;
 @synthesize brew_timer;
+@synthesize reset_icon_timer;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	[window makeKeyAndOrderFront:nil];
@@ -90,6 +91,9 @@
 {
     [self cancelBrewing:sender];
     
+    [reset_icon_timer invalidate];
+    reset_icon_timer = nil;
+    
     if (([sender tag] > 0) && ([sender tag] < (NUMBER_OF_INTERVALS + 1))) {      
         brew_timer = [NSTimer scheduledTimerWithTimeInterval:([sender tag] * 60) target:self selector:@selector(teaIsDone:) userInfo:nil repeats:NO];
         [status_item  setImage:brewing_cup];
@@ -121,6 +125,9 @@
         
     
     [status_item setImage:brewed_cup];
+    //reset the icon in ten minutes to an empty cup.
+    reset_icon_timer = [NSTimer scheduledTimerWithTimeInterval:(10 * 60) target:self selector:@selector(resetStatusMenuIcon:) userInfo:nil repeats:NO];
+
 }
 
 - (void)cancelBrewing:(id)sender
@@ -137,6 +144,12 @@
             [item setState:NSOffState];
         }
     }
+}
+
+- (void)resetStatusMenuIcon:(id)sender
+{
+    [status_item setImage:empty_cup];
+    reset_icon_timer = nil;
 }
 
 @end
