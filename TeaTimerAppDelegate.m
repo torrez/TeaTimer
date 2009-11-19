@@ -23,9 +23,9 @@
 
     NSBundle *bundle = [NSBundle mainBundle];
     
-	[status_menu setAutoenablesItems:NO];
-	brewing_cup	= [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"Brewing" ofType:@"png"]];
-	empty_cup	= [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"Empty" ofType:@"png"]];
+    [status_menu setAutoenablesItems:NO];
+    brewing_cup	= [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"Brewing" ofType:@"png"]];
+    empty_cup	= [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"Empty" ofType:@"png"]];
     brewed_cup  = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"Brewed" ofType:@"png"]];
     
     //Sets the images in our NSStatusItem
