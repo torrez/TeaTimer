@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #define NUMBER_OF_INTERVALS 10
-
+#if (MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_5)
+@interface TeaTimerAppDelegate : NSObject  {
+#else
 @interface TeaTimerAppDelegate : NSObject <NSApplicationDelegate> {
+#endif
     NSWindow        *window;
     NSWindow        *first_run_window;
     IBOutlet NSMenu *status_menu;

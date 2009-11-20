@@ -30,6 +30,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		6C8A58B410B384B5001384D6 /* Empty In Status Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Empty In Status Bar.png"; path = "Resources/Empty In Status Bar.png"; sourceTree = "<group>"; };
+		6CD7935F10B60F8C00E1472D /* Test Target-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test Target-Info.plist"; sourceTree = "<group>"; };
 		6CE677BB10B22A3F00917E66 /* Brewing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Brewing.png; path = Resources/Brewing.png; sourceTree = "<group>"; };
 		6CE677BD10B22A7600917E66 /* Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Empty.png; path = Resources/Empty.png; sourceTree = "<group>"; };
 		6CE677D710B267B800917E66 /* Brewed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Brewed.png; path = Resources/Brewed.png; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				6CD7935F10B60F8C00E1472D /* Test Target-Info.plist */,
 			);
 			name = TeaTimer;
 			sourceTree = "<group>";
@@ -267,7 +269,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx10.5;
 			};
 			name = Release;
 		};
